@@ -341,7 +341,7 @@ x= np.linspace(-10,10, num=N)
 
 
 # titulo de la ventana
-ventana_principal.title("Funciones")
+ventana_principal.title("Funciones Trigonometricas")
 
 # tamañan de la ventana
 ventana_principal.geometry("500x500")
@@ -353,7 +353,7 @@ ventana_principal.resizable(0,0)
 ventana_principal.config(bg= "black")
 
 # etiqueta para el titulo de la app
-titulo = Label(ventana_principal, text= "----Funciones----")
+titulo = Label(ventana_principal, text= "Funciones Trigonometricas")
 titulo.config(bg="black", fg="white", font=("Arial",18))
 titulo.place(x=50,y=10, width=400, height=40)
 # boton lineal
@@ -377,14 +377,14 @@ bt_logaritmo= Button(ventana_principal, text="logaritmica", command=mostrar_loga
 bt_logaritmo.place(x=200,y=200, width=100, height=30)
 
 #funcion trigonometrica
-bt_trigonometrica= Button(ventana_principal, text="trigonometrica", command=funcion_trigonometrica)
+bt_trigonometrica= Button(ventana_principal, text="Trigonometrica", command=funcion_trigonometrica)
 bt_trigonometrica.place(x=200,y=235, width=100, height=30)
 
 # ------------------------
 # frame operaciones
 # ------------------------
 frame_operaciones = Frame(ventana_principal)
-frame_operaciones.config(bg="pink", width=480, height=190)
+frame_operaciones.config(bg="red", width=480, height=190)
 frame_operaciones.place(x=10,y=300)
 
 ventana_principal.mainloop()
